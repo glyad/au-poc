@@ -1,0 +1,30 @@
+<template>
+    <h1>Hello!</h1>
+    <div class="row">
+        <button md-button click.delegate="selectAll()" disabled.bind="!canSelectAll">select all</button>
+        <button md-button click.delegate="clearSelection()" disabled.bind="!canClear">clear</button>
+        <button md-button click.delegate="removeSelectedItems()" disabled.bind="!canRemoveSelectedItem">remove</button>
+    </div>
+    <div>
+        <button md-button click.delegate="addItem()" >add</button>
+        <button md-button click.delegate="remove()" >remove</button>
+        <button md-button click.delegate="addMany()" >add range</button>
+        <button md-button click.delegate="removeMany()" >remove range</button>
+    </div>
+
+    <!--<div repeat.for="document of documents">
+        <compose view-model.bind="document"></compose>
+    </div>-->
+
+    <md-collection class="col-md-4">
+        <md-collection-item repeat.for="document of documents" class="avatar ${ document.isSelected ? 'selected' : '' }">
+            <!-- TODO: Need to understand, why it don't work on Windows without "View" attribute -->
+            <compose view-model.bind="document" view="../views/documentView.html"></compose>
+        </md-collection-item>
+    </md-collection>
+
+    <div class="col-md-offset-2 col-md-4">
+        <compose view-model.bind="documentViewModel" view="../views/editableDocumentView.html"></compose>
+    </div>
+                            
+</template>

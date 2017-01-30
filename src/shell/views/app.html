@@ -1,0 +1,12 @@
+<template>
+  <require from="materialize-css/materialize.css"></require>
+  <require from="../../nav-bar.html"></require>
+  
+  <md-colors md-primary-color="#ee6e73" md-accent-color="#009688"></md-colors>
+  
+  <nav-bar router.bind="router"></nav-bar>
+
+  <div class="page-host">
+    <router-view></router-view>
+  </div>
+</template>

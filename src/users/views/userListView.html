@@ -1,0 +1,14 @@
+<template>
+    <require from="../../logofx/elements/listbox/listbox"></require>
+    <require from="../../logofx/elements/listbox/listboxitem"></require>
+    
+    <div>
+        <h1>List</h1>
+    </div>
+    
+    <div repeat.for="user of users" mouseup.delegate="select(user)" style="border-width: 2; border-color: black">
+        <compose view-model.bind="user" view="../views/userDetailsView.html"></compose>
+    </div>
+
+    <listbox itemssource.bind="users" context="../../../users/views/userDetails/edit.html"></listbox>
+</template>

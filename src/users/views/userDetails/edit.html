@@ -1,0 +1,18 @@
+<template>
+    <h3>
+        Editing
+    </h3>
+
+    <form role="form" class="form-horizontal">
+        <div class="form-group">
+            <span>${name}</span>
+            <div class="col-sm-10">
+                <md-input md-label="Name"
+                        md-placeholder="Name"
+                        md-value.two-way="model.firstName"></md-input>
+                        <!--md-show-errortext="true"
+                        md-value.two-way="model.name & validateOnChange:model.rules"></md-input>-->
+            </div>
+        </div>
+    </form>
+</template>
