@@ -1,0 +1,74 @@
+.flexbox-container-of-cols{ 
+    height: 100%; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    -webkit-flex-direction: column; 
+    flex-wrap: nowrap; 
+    -webkit-flex-wrap: nowrap; 
+    justify-content: center; 
+    -webkit-justify-content: center; 
+    align-items: stretch; 
+    -webkit-align-items: stretch; 
+    align-content: stretch; 
+} 
+
+.flexbox-container-of-rows{ 
+    display: inline-flex; 
+    flex-direction: row; 
+    -webkit-flex-direction: row; 
+    flex-wrap: nowrap; 
+    -webkit-flex-wrap: nowrap; 
+    justify-content: space-between; 
+    -webkit-justify-content: space-between; 
+    align-items: stretch; 
+    -webkit-align-items: stretch; 
+    align-content: stretch; 
+} 
+
+.flexbox-child-item-1{ 
+    height: 80px;
+    order: 0; 
+    -webkit-order: 0; 
+    flex-grow: 0; 
+    -webkit-flex-grow: 0; 
+    flex-shrink: 0; 
+    -webkit-flex-shrink: 0; 
+    align-self: baseline; 
+    -webkit-align-self: baseline; 
+    background-color: lightblue;
+} 
+.flexbox-child-item-2{ 
+    order: 1; 
+    -webkit-order: 1; 
+    flex-grow: 1; 
+    -webkit-flex-grow: 1; 
+    flex-shrink: 0; 
+    -webkit-flex-shrink: 0; 
+    align-self: stretch; 
+    -webkit-align-self: stretch; 
+    background-color: lightgreen; 
+} 
+.flexbox-child-item-3{ 
+    height: 100px;
+    order: 3; 
+    -webkit-order: 3; 
+    flex-grow: 0; 
+    -webkit-flex-grow: 0; 
+    flex-shrink: 0; 
+    -webkit-flex-shrink: 0; 
+    align-self: stretch; 
+    -webkit-align-self: stretch; 
+    background-color: lightskyblue;     
+} 
+.flexbox-child-item-of-row { 
+    order: 0; 
+    -webkit-order: 0; 
+    flex-grow: 0; 
+    -webkit-flex-grow: 1; 
+    flex-shrink: 0; 
+    -webkit-flex-shrink: 0; 
+    align-self: stretch; 
+    -webkit-align-self: stretch; 
+    background-color: gray;     
+} 

@@ -2,15 +2,13 @@
 import {I18N} from 'aurelia-i18n';
 import Backend from 'i18next-xhr-backend';
 // we want font-awesome to load as soon as possible to show the fa-spinner
-import '../styles/styles.css';
 import 'font-awesome/css/font-awesome.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'materialize-css';
-// import {I18N} from 'aurelia-i18n';
-// import * as Backend from 'i18next-xhr-backend';
+import '../styles/styles.css';
 
 // import 'aurelia-animator-css';
-import 'bootstrap';
+//import 'bootstrap';
 
 // comment out if you don't want a Promise polyfill (remove also from webpack.config.js)
 import * as Bluebird from 'bluebird';

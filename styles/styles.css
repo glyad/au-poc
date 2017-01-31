@@ -1,5 +1,27 @@
 body {
-  margin: 0;
+  display: flex; 
+  flex-direction: column; 
+  -webkit-flex-direction: column; 
+  flex-wrap: nowrap; 
+  -webkit-flex-wrap: nowrap; 
+  justify-content: center; 
+  -webkit-justify-content: center; 
+  align-items: stretch; 
+  -webkit-align-items: stretch; 
+  align-content: stretch; 
+}
+
+.flexbox-container {
+  display: flex; 
+  flex-direction: column; 
+  -webkit-flex-direction: column; 
+  flex-wrap: nowrap; 
+  -webkit-flex-wrap: nowrap; 
+  justify-content: center; 
+  -webkit-justify-content: center; 
+  align-items: stretch; 
+  -webkit-align-items: stretch; 
+  align-content: stretch; 
 }
 
 .splash {
