@@ -1,4 +1,4 @@
-body {
+/*body {
   display: flex; 
   flex-direction: column; 
   -webkit-flex-direction: column; 
@@ -79,14 +79,12 @@ section {
   max-width: 425px;
 }
 
-/* animate page transitions */
 section.au-enter-active {
   -webkit-animation: fadeInRight 1s;
   animation: fadeInRight 1s;
 }
 
 div.au-stagger {
-  /* 50ms will be applied between each successive enter operation */
   -webkit-animation-delay: 50ms;
   animation-delay: 50ms;
 }
@@ -124,7 +122,6 @@ div.au-stagger {
 }
 
 .card .header-bg {
-  /* This stretches the canvas across the entire hero unit */
   position: absolute;
   top: 0;
   left: 0;
@@ -149,7 +146,6 @@ div.au-stagger {
   border: 2px #FFF solid;
 }
 
-/* animation definitions */
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -194,4 +190,4 @@ div.au-stagger {
   100% {
     opacity: 1;
   }
-}
+}*/
